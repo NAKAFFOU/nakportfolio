@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discussion Forum</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav {
+            margin-top: 20px;
+            background: #333;
+            color: #fff;
+            padding: 10px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin-right: 15px;
+        }
+        .forum-section {
+            margin: 20px 0;
+            padding: 20px;
+            background: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .forum-section h2 {
+            margin-top: 0;
+        }
+        .forum-thread {
+            margin: 15px 0;
+            padding: 15px;
+            border-bottom: 1px solid #ddd;
+        }
+        .forum-thread:last-child {
+            border-bottom: none;
+        }
+        .forum-thread a {
+            text-decoration: none;
+            color: #333;
+        }
+        .forum-thread a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Discussion Forum</h1>
+    </header>
+
+    <div class="container">
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Categories</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+
+        <section class="forum-section">
+            <h2>Recent Discussions</h2>
+
+            <div class="forum-thread">
+                <a href="#">How do I manage risk in enterprise IT?</a>
+                <p>Posted by John Doe on August 13, 2024</p>
+            </div>
+
+            <div class="forum-thread">
+                <a href="#">Understanding qualitative vs. quantitative risk assessments</a>
+                <p>Posted by Jane Smith on August 12, 2024</p>
+            </div>
+
+            <div class="forum-thread">
+                <a href="#">Best practices for creating a disaster recovery plan</a>
+                <p>Posted by Alice Johnson on August 10, 2024</p>
+            </div>
+
+            <!-- Add more threads as needed -->
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Discussion Forum. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
