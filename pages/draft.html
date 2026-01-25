@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <link rel="icon" type="image/x-icon" href="../assets/img/favicon.ico" />
@@ -11,179 +11,465 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="../assets/vendor/bootstrap/css/bootstrap.min.css">
     <link href="../assets/css/main.css" rel="stylesheet">
-    <link href="../assets/css/Modules.css" rel="stylesheet">
+    <link href="../assets/css/experience.css" rel="stylesheet">
     <link rel="stylesheet" href="../assets/css/fontawesome651.all.min.css">
 
     <!-- Google Fonts CSS -->
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap"
         rel="stylesheet">
-    <title>Launching into Enterprise IT Management | MSc Modules</title>
+
+    <!-- Optional tiny style for language buttons (doesn't break your template) -->
+    <style>
+        .lang-switch .btn.active {
+            font-weight: 700;
+        }
+    </style>
+
 </head>
 
 <body>
+    <header-component></header-component>
 
     <div id="page-container">
-        <header-component></header-component>
+        <div class="container mt-4">
 
-        <div class="container mt-4 mb-4" id="content-wrap">
-
-            <!-- Fil d’Ariane / Breadcrumb simple -->
-            <div class="mb-3 small">
-                <a href="modules.html" class="text-muted">
-                    <i class="fa-solid fa-angle-left mr-1"></i>Back to Modules overview
-                </a>
+            <!-- ===================== LANGUAGE SWITCH (TOP BUTTONS) ===================== -->
+            <div class="d-flex justify-content-end mb-3">
+                <div class="btn-group btn-group-sm lang-switch" role="group" aria-label="Language switch">
+                    <button type="button" class="btn btn-outline-primary" id="btn-fr">FR</button>
+                    <button type="button" class="btn btn-outline-primary" id="btn-en">EN</button>
+                </div>
             </div>
 
-            <!-- Bandeau principal du module -->
-            <div class="card mb-3">
+            <h5><b><span data-i18n="section_experience">__ Experience Professionnelle __</span></b></h5>
+
+            <!-- experience 1 -->
+            <div class="mt-3 card">
                 <div class="card-body">
-                    <div class="row align-items-center">
-                        <!-- Colonne image ou icône -->
-                        <div class="col-12 col-md-3 text-center mb-3 mb-md-0">
-                            <!-- Si tu as une image de module, décommente ci-dessous -->
-                            
-                            <img src="../assets/img/Module/im8.jpg"
-                                 alt="Launching into Enterprise IT Management"
-                                 class="img-fluid rounded mb-2">
-                            
-
+                    <div class="row mt-2 mt-md-0">
+                        <div class="col-5 col-md-2">
+                            <img class="card-img-top" src="../assets/img/portdecotonouofficiel_logo.jpg" alt="Card image">
                         </div>
 
-                        <!-- Colonne titre / contexte -->
-                        <div class="col-12 col-md-9 text-center text-md-left">
-                            <h1 class="h1 mb-1" style="color: var(--blue-medium);">
-                                Launching into Enterprise IT Management
-                            </h1>
+                        <div class="col-7 col-md-10">
+                            <h4 class="card-title mb-0 responsive-text">
+                                <a class="exp-affiliation" href="" target="_blank" rel="noopener"
+                                    data-i18n="pac_company">PORT AUTONOME DE COTONOU</a>
+                            </h4>
+                            <h6 class="card-subtitle- mb-0 responsive-text" style="font-size: large;">
+                                <span class="exp-affiliation" data-i18n="pac_location">Cotonou – Bénin</span>
+                            </h6>
+                            <h3 class="designation-lemos mt-1">
+                                <span data-i18n="pac_role">Responsable ERP & Solutions Métiers</span>
+                            </h3>
+                            <h6 class="small-lemos mt-1">
+                                <span data-i18n="pac_dates">(Depuis Mars 2023)</span>
+                            </h6>
+
+                            <!-- NOTE: Your original code had a missing <h5> opening tag here. Fixed, but layout unchanged. -->
+                            <h5 class="ml-0 mb-0">
+                                <button class="btn btn-blue py-0" type="button" data-toggle="collapse"
+                                    data-target="#collapseContent-1" aria-expanded="true"
+                                    aria-controls="collapseContent-1">
+                                    <span data-i18n="read_more">Read more...</span>
+                                </button>
+                            </h5>
+                        </div>
+
+                        <div id="collapseContent-1" class="collapse">
+                            <div class="card-body  mb-0 pt-4 pb-0">
+                                <!-- Your expandable content goes here -->
+
+                                <!-- NOTE: Your original code had nested <ul> duplicated; cleaned to one list (visual unchanged) -->
+                                <ul class="mt-3 mb-0 text-justify">
+                                    <li data-i18n="pac_b1">
+                                        Pilotage et gouvernance de l’ERP JD Edwards (Paie, Achats, Stocks) dans un
+                                        environnement critique et fortement intégré.
+                                    </li>
+                                    <li data-i18n="pac_b2">
+                                        Conception et mise en œuvre d’interfaces applicatives entre l’ERP, les banques et
+                                        les partenaires institutionnels, garantissant la fiabilité et la continuité des
+                                        échanges de données.
+                                    </li>
+                                    <li data-i18n="pac_b3">
+                                        Chef de projet de la migration ERP JD Edwards (version 9.0 → 9.2) : cadrage,
+                                        planification, coordination des acteurs, déploiement et accompagnement au changement.
+                                    </li>
+                                    <li data-i18n="pac_b4">
+                                        Optimisation des processus logistiques et de facturation, avec une amélioration de
+                                        la traçabilité, de la qualité des données et de l’efficacité opérationnelle.
+                                    </li>
+                                    <li data-i18n="pac_b5">
+                                        Chef de projet de l’implémentation d’une solution GMAO-SIG : analyse des besoins,
+                                        dimensionnement de la solution et pilotage du projet.
+                                    </li>
+                                    <li data-i18n="pac_b6">
+                                        Coordination des équipes internes et partenaires IT, incluant la formation des
+                                        utilisateurs clés et la production de documentation fonctionnelle et technique.
+                                    </li>
+                                    <li data-i18n="pac_b7">
+                                        Mise en place de reporting décisionnel à l’aide de Power BI et SQL pour le suivi de
+                                        la performance, des KPI et des SLA.
+                                    </li>
+                                </ul>
+                            </div>
 
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Mini menu de section (ancrages internes) -->
-            <div class="card mb-3">
-                <div class="card-body py-2">
-                    <div class="d-flex flex-wrap justify-content-center justify-content-md-start">
-                        <a href="#learning-objectives" class="btn btn-blue btn-sm m-1">
-                            <i class="fa-solid fa-bullseye mr-1"></i>Learning Objectives
-                        </a>
-                        <a href="#outcomes" class="btn btn-blue btn-sm m-1">
-                            <i class="fa-solid fa-square-check mr-1"></i>Outcomes
-                        </a>
-                        <a href="#reflection" class="btn btn-blue btn-sm m-1">
-                            <i class="fa-regular fa-pen-to-square mr-1"></i>Reflection
-                        </a>
-                        <a href="#skills" class="btn btn-blue btn-sm m-1">
-                            <i class="fa-solid fa-lightbulb mr-1"></i>Key Skills
-                        </a>
+            <!-- experience 2 -->
+            <div class="mt-3 card">
+                <div class="card-body">
+                    <div class="row mt-2 mt-md-0">
+                        <div class="col-5 col-md-2">
+                            <img class="card-img-top" src="../assets/img/speig_logo.jpg" alt="Card image">
+                        </div>
+
+                        <div class="col-7 col-md-10">
+                            <h4 class="card-title mb-0 responsive-text">
+                                <a class="exp-affiliation" href="" target="_blank" rel="noopener"
+                                    data-i18n="colas_company">COLAS DS</a>
+                            </h4>
+                            <h6 class="card-subtitle- mb-0 responsive-text" style="font-size: large;">
+                                <span class="exp-affiliation" data-i18n="colas_location">Casablanca – Maroc</span>
+                            </h6>
+                            <h3 class="designation-lemos mt-1">
+                                <span data-i18n="colas_role">Ingénieur Études et Développements ERP</span>
+                            </h3>
+                            <h6 class="small-lemos mt-1">
+                                <span data-i18n="colas_dates">(Novembre 2020 – Décembre 2023)</span>
+                            </h6>
+
+                            <h5 class="ml-0 mb-0">
+                                <button class="btn btn-blue py-0" type="button" data-toggle="collapse"
+                                    data-target="#collapseContent-2" aria-expanded="true"
+                                    aria-controls="collapseContent-2">
+                                    <span data-i18n="read_more">Read more...</span>
+                                </button>
+                            </h5>
+                        </div>
+
+                        <div id="collapseContent-2" class="collapse">
+                            <div class="card-body mb-0 pt-4 pb-0">
+                                <!-- Your expandable content goes here -->
+                                <ul class="mt-3 mb-0 text-justify">
+                                    <li data-i18n="colas_b1">Développement et interfaçage de JD Edwards avec les outils métiers du groupe.</li>
+                                    <li data-i18n="colas_b2">Participation au projet « Upgrade J@DE Release 23 + migration 64 bits ».</li>
+                                    <li data-i18n="colas_b3">Support technique et rédaction de spécifications pour les besoins logistiques et financiers.</li>
+                                </ul>
+                            </div>
+
+                        </div>
                     </div>
                 </div>
             </div>
 
-<!-- Contenu principal avec sections encadrées -->
-<div class="card">
-    <div class="card-body">
-        <div class="row">
+            <!-- experience 3 -->
+            <div class="mt-3 card">
+                <div class="card-body">
+                    <div class="row mt-2 mt-md-0">
+                        <div class="col-5 col-md-2">
+                            <img class="card-img-top" src="../assets/img/itidev.jpg" alt="Card image">
+                        </div>
 
-            <!-- Colonne gauche -->
-            <div class="col-12 col-md-6">
+                        <div class="col-7 col-md-10">
+                            <h4 class="card-title mb-0 responsive-text">
+                                <a class="exp-affiliation" href="" target="_blank" rel="noopener"
+                                    data-i18n="itidev_company">ITiDEV (EXPERIUM-NAX GROUP)</a>
+                            </h4>
+                            <h6 class="card-subtitle- mb-0 responsive-text" style="font-size: large;">
+                                <span class="exp-affiliation" data-i18n="itidev_location">Abidjan / Lyon</span>
+                            </h6>
+                            <h3 class="designation-lemos mt-1">
+                                <span data-i18n="itidev_role">Consultant Technico-Fonctionnel ERP</span>
+                            </h3>
+                            <h6 class="small-lemos mt-1">
+                                <span data-i18n="itidev_dates">(Mars 2016 – Octobre 2020)</span>
+                            </h6>
 
-                <!-- Learning Objectives -->
-                <section id="learning-objectives" class="mb-4">
-                    <div class="card shadow-sm border-0" style="border-left: 4px solid var(--blue-medium) !important;">
-                        <div class="card-body">
-                            <h2 class="h5 mb-3" style="color: var(--blue-medium);">
-                                <i class="fa-solid fa-bullseye mr-2"></i>Learning Objectives
-                            </h2>
-                            <ul class="mb-0">
-                                <li>Review what is meant by Enterprise IT and how it differs from business computing and Industry 4.0 / 5.0.</li>
-                                <li>Discuss increased automation and the impact of digital information on Enterprise IT.</li>
-                                <li>Evaluate emerging trends such as Web 3.0, Artificial Intelligence, and cyber security risks.</li>
-                            </ul>
+                            <h5 class="ml-0 mb-0">
+                                <button class="btn btn-blue py-0" type="button" data-toggle="collapse"
+                                    data-target="#collapseContent-3" aria-expanded="true"
+                                    aria-controls="collapseContent-3">
+                                    <span data-i18n="read_more">Read more...</span>
+                                </button>
+                            </h5>
+                        </div>
+
+                        <div id="collapseContent-3" class="collapse">
+                            <div class="card-body mb-0 pt-4 pb-0">
+                                <!-- Your expandable content goes here -->
+                                <ul class="mt-3 mb-0 text-justify">
+                                    <li data-i18n="itidev_b1">Conception de solutions sur mesure (logistique, finance, paie) pour des clients multisectoriels.</li>
+                                    <li data-i18n="itidev_b2">Réalisation d’interfaces applicatives (infrastructure multisite, environnements ERP/JDE).</li>
+                                    <li data-i18n="itidev_b3">Études d’impacts et rédaction de spécifications dans des contextes de transformation digitale.</li>
+                                </ul>
+                            </div>
+
                         </div>
                     </div>
-                </section>
-
-                <!-- Outcomes -->
-                <section id="outcomes" class="mb-4">
-                    <div class="card shadow-sm border-0" style="border-left: 4px solid var(--blue-medium) !important;">
-                        <div class="card-body">
-                            <h2 class="h5 mb-3" style="color: var(--blue-medium);">
-                                <i class="fa-solid fa-square-check mr-2"></i>Outcomes
-                            </h2>
-                            <ul class="mb-0">
-                                <li>Critical appraisal of key IT service management concepts and frameworks.</li>
-                                <li>Critical evaluation of developments and challenges in IT service management literature.</li>
-                                <li>Systematic understanding of tools and techniques to analyse and solve IT problems.</li>
-                                <li>Ability to identify and manage technical and strategic risks.</li>
-                                <li>Application of postgraduate research methods to IT service management projects.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </section>
-
+                </div>
             </div>
 
-            <!-- Colonne droite -->
-            <div class="col-12 col-md-6">
+            <!-- experience 4 -->
+            <div class="mt-3 card">
+                <div class="card-body">
+                    <div class="row mt-2 mt-md-0">
+                        <div class="col-5 col-md-2">
+                            <img class="card-img-top" src="../assets/img/TacInter.jpg" alt="Card image">
+                        </div>
 
-                <!-- Reflection -->
-                <section id="reflection" class="mb-4">
-                    <div class="card shadow-sm border-0" style="border-left: 4px solid var(--blue-medium) !important;">
-                        <div class="card-body">
-                            <h2 class="h5 mb-3" style="color: var(--blue-medium);">
-                                <i class="fa-regular fa-pen-to-square mr-2"></i>Reflection
-                            </h2>
-                            <p class="text-justify">
-                                    The Enterprise IT module has significantly enhanced my understanding of how
-                                    technology integrates with contemporary business practices, particularly through the
-                                    lens of automation, the Internet of Things (IoT), and digital transformation. I
-                                    gained valuable insights into the distinctions between Enterprise IT and traditional
-                                    business computing, as well as the implications of emerging trends such as Web 3.0
-                                    and Artificial Intelligence.
-                            </p>
-                            <p class="text-justify mb-0">
-                                    This experience underscored the importance of aligning technology strategies with
-                                    organisational goals, while also highlighting the critical need for robust cyber
-                                    security measures in an increasingly complex landscape. The module's structured yet
-                                    flexible approach allowed me to engage deeply with the material, helping me feel
-                                    better prepared to navigate the challenges and opportunities within IT service
-                                    management.
-                            </p>
+                        <div class="col-7 col-md-10">
+                            <h4 class="card-title mb-0 responsive-text">
+                                <a class="exp-affiliation" href="" target="_blank" rel="noopener"
+                                    data-i18n="selec_company">GROUPE SELEC SA</a>
+                            </h4>
+                            <h6 class="card-subtitle- mb-0 responsive-text" style="font-size: large;">
+                                <span class="exp-affiliation" data-i18n="selec_location">Abidjan – Côte d’Ivoire</span>
+                            </h6>
+                            <h3 class="designation-lemos mt-1">
+                                <span data-i18n="selec_role">Responsable Informatique & Logistique</span>
+                            </h3>
+                            <h6 class="small-lemos mt-1">
+                                <span data-i18n="selec_dates">(Septembre 2015 – Février 2016)</span>
+                            </h6>
+
+                            <h5 class="ml-0 mb-0">
+                                <button class="btn btn-blue py-0" type="button" data-toggle="collapse"
+                                    data-target="#collapseContent-4" aria-expanded="true"
+                                    aria-controls="collapseContent-4">
+                                    <span data-i18n="read_more">Read more...</span>
+                                </button>
+                            </h5>
+                        </div>
+
+                        <div id="collapseContent-4" class="collapse">
+                            <div class="card-body mb-0 pt-4 pb-0">
+                                <!-- Your expandable content goes here -->
+                                <ul class="mt-3 mb-0 text-justify">
+                                    <li data-i18n="selec_b1">Gérer le parc informatique.</li>
+                                    <li data-i18n="selec_b2">Manager des équipes et prestataires externes.</li>
+                                    <li data-i18n="selec_b3">Assurer la gestion, la traçabilité et le contrôle du petit et gros matériel (inventaire, traitement et suivi des actions/écarts).</li>
+                                </ul>
+                            </div>
+
                         </div>
                     </div>
-                </section>
-
-                <!-- Key Skills -->
-                <section id="skills" class="mb-4">
-                    <div class="card shadow-sm border-0" style="border-left: 4px solid var(--blue-medium) !important;">
-                        <div class="card-body">
-                            <h2 class="h5 mb-3" style="color: var(--blue-medium);">
-                                <i class="fa-solid fa-lightbulb mr-2"></i>Key Skills Developed
-                            </h2>
-                                 <ul>
-                                  	<a>#Python</a>
-								<ul>
-                                    <li>Developed a foundational understanding of Python programming.</li>
-                                    <li>Gained hands-on experience with sorting algorithms, performance optimization, and file handling.</li>
-                                    <li>Achieved practical insights into Python’s built-in functions and libraries, improving problem-solving skills.</li>
-                                </ul>                               
-                                    <a>V#isual Studio Code (VS Code)</a>
-                                <ul>
-                                    <li>Learned to navigate and utilize VS Code for efficient coding and project management.</li>
-                                    <li>Gained familiarity with essential features such as debugging, version control integration, and terminal usage.</li>
-                                    <li>Enhanced productivity by customizing the development environment with tailored extensions and settings.</li>
-                                </ul>												                           </ul>
-                         </div>
-                    </div>
-                </section>
-
+                </div>
             </div>
 
-        </div>
-    </div>
-</div>
+            <h5 class="mt-5"><b><span data-i18n="section_education">__ Formation _____</span></b></h5>
 
+            <!-- Formation 1 -->
+            <div class="mt-3 card">
+                <div class="card-body">
+                    <div class="row mt-2 mt-md-0">
+                        <div class="col-5 col-md-2">
+                            <img class="card-img-top" src="../assets/img/essex.jpg" alt="Card image">
+                        </div>
+
+                        <div class="col-7 col-md-10">
+                            <h4 class="card-title mb-0 responsive-text">
+                                <a class="exp-affiliation" href="" target="_blank" rel="noopener"
+                                    data-i18n="edu1_title">Master of Science in Enterprise IT Management</a>
+                            </h4>
+                            <h6 class="card-subtitle- mb-0 responsive-text">
+                                <a class="exp-affiliation" href="" target="_blank" rel="noopener"
+                                    data-i18n="edu1_school">University of Essex (Online) – Royaume-Uni</a>
+                            </h6>
+
+                            <h6 class="small-lemos mt-1"><span data-i18n="edu1_dates">(2024 – En cours)</span></h6>
+
+                            <h5 class="ml-0 mb-2">
+                                <button class="btn btn-blue py-0" type="button" data-toggle="collapse"
+                                    data-target="#collapseContent-5" aria-expanded="true"
+                                    aria-controls="collapseContent-5">
+                                    <span data-i18n="read_more">Read more...</span>
+                                </button>
+                            </h5>
+                        </div>
+
+                        <div id="collapseContent-5" class="collapse">
+                            <div class="card-body mb-0 pt-4 pb-0 text-justify">
+                                <ul class="mt-3 mb-0 text-justify">
+                                    <li data-i18n="edu1_b1">Gouvernance et stratégie IT, gestion des risques et sécurité des systèmes.</li>
+                                    <li data-i18n="edu1_b2">Optimisation des services IT (ITIL), pilotage de projets IT complexes.</li>
+                                    <li data-i18n="edu1_b3">Analyse de données et reporting décisionnel (Power BI).</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Formation 2 -->
+            <div class="mt-3 card">
+                <div class="card-body">
+                    <div class="row mt-2 mt-md-0">
+                        <div class="col-5 col-md-2">
+                            <img class="card-img-top" src="../assets/img/Scrum.jpg" alt="Card image">
+                        </div>
+
+                        <div class="col-7 col-md-10">
+                            <h4 class="card-title mb-0 responsive-text">
+                                <a class="exp-affiliation" href="" target="_blank" rel="noopener"
+                                    data-i18n="edu2_title">Professional Scrum Master PSM® I</a>
+                            </h4>
+                            <h6 class="card-subtitle- mb-0 responsive-text">
+                                <a class="exp-affiliation" href="" target="_blank" rel="noopener"
+                                    data-i18n="edu2_school">SCRUM Organisation</a>
+                            </h6>
+
+                            <h6 class="small-lemos mt-1"><span data-i18n="edu2_dates">(2022)</span></h6>
+
+                            <h5 class="ml-0 mb-2">
+                                <button class="btn btn-blue py-0" type="button" data-toggle="collapse"
+                                    data-target="#collapseContent-6" aria-expanded="true"
+                                    aria-controls="collapseContent-6">
+                                    <span data-i18n="read_more">Read more...</span>
+                                </button>
+                            </h5>
+                        </div>
+
+                        <div id="collapseContent-6" class="collapse">
+                            <div class="card-body mb-0 pt-4 pb-0 text-justify">
+                                <ul class="mt-3 mb-0 text-justify">
+                                    <li data-i18n="edu2_b1">Certification Scrum démontrant la maîtrise des fondamentaux Agile/Scrum (rôles, événements et artefacts).</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Formation 3 -->
+            <div class="mt-3 card">
+                <div class="card-body">
+                    <div class="row mt-2 mt-md-0">
+                        <div class="col-5 col-md-2">
+                            <img class="card-img-top" src="../assets/img/ism.jpg" alt="Card image">
+                        </div>
+
+                        <div class="col-7 col-md-10">
+                            <h4 class="card-title mb-0 responsive-text">
+                                <a class="exp-affiliation" href="" target="_blank" rel="noopener"
+                                    data-i18n="edu3_title">Executive Master of Engineering – Logistique & Management de la Supply Chain</a>
+                            </h4>
+                            <h6 class="card-subtitle- mb-0 responsive-text">
+                                <a class="exp-affiliation" href="" target="_blank" rel="noopener"
+                                    data-i18n="edu3_school">ISM Paris – SupMeca, France</a>
+                            </h6>
+
+                            <h6 class="small-lemos mt-1"><span data-i18n="edu3_dates">(2021)</span></h6>
+
+                            <h5 class="ml-0 mb-2">
+                                <button class="btn btn-blue py-0" type="button" data-toggle="collapse"
+                                    data-target="#collapseContent-7" aria-expanded="true"
+                                    aria-controls="collapseContent-7">
+                                    <span data-i18n="read_more">Read more...</span>
+                                </button>
+                            </h5>
+                        </div>
+
+                        <div id="collapseContent-7" class="collapse">
+                            <div class="card-body mb-0 pt-4 pb-0 text-justify">
+                                <ul class="mt-3 mb-0 text-justify">
+                                    <li data-i18n="edu3_b1">Conception et pilotage de chaînes logistiques complexes.</li>
+                                    <li data-i18n="edu3_b2">Optimisation des flux, des coûts et de la performance opérationnelle.</li>
+                                    <li data-i18n="edu3_b3">Intégration des outils ERP et des méthodes de gestion industrielle.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Formation 4 -->
+            <div class="mt-3 card">
+                <div class="card-body">
+                    <div class="row mt-2 mt-md-0">
+                        <div class="col-5 col-md-2">
+                            <img class="card-img-top" src="../assets/img/Legon.jpg" alt="Card image">
+                        </div>
+
+                        <div class="col-7 col-md-10">
+                            <h4 class="card-title mb-0 responsive-text">
+                                <a class="exp-affiliation" href="" target="_blank" rel="noopener"
+                                    data-i18n="edu4_title">Certificate of Proficiency in English</a>
+                            </h4>
+                            <h6 class="card-subtitle- mb-0 responsive-text">
+                                <a class="exp-affiliation" href="" target="_blank" rel="noopener"
+                                    data-i18n="edu4_school">University of Legon, Ghana</a>
+                            </h6>
+
+                            <h6 class="small-lemos mt-1"><span data-i18n="edu4_dates">(2015)</span></h6>
+
+                            <h5 class="ml-0 mb-2">
+                                <button class="btn btn-blue py-0" type="button" data-toggle="collapse"
+                                    data-target="#collapseContent-8" aria-expanded="true"
+                                    aria-controls="collapseContent-8">
+                                    <span data-i18n="read_more">Read more...</span>
+                                </button>
+                            </h5>
+                        </div>
+
+                        <div id="collapseContent-8" class="collapse">
+                            <div class="card-body mb-0 pt-4 pb-0 text-justify">
+                                <ul class="mt-3 mb-0 text-justify">
+                                    <li data-i18n="edu4_b1">Programme attestant d’un niveau d’anglais académique et professionnel.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Formation 5 -->
+            <div class="mt-3 card">
+                <div class="card-body">
+                    <div class="row mt-2 mt-md-0">
+                        <div class="col-5 col-md-2">
+                            <img class="card-img-top" src="../assets/img/ucao-uuc.jpg" alt="Card image">
+                        </div>
+
+                        <div class="col-7 col-md-10">
+                            <h4 class="card-title mb-0 responsive-text">
+                                <a class="exp-affiliation" href="" target="_blank" rel="noopener"
+                                    data-i18n="edu5_title">Licence en Informatique de Gestion</a>
+                            </h4>
+                            <h6 class="card-subtitle- mb-0 responsive-text">
+                                <a class="exp-affiliation" href="" target="_blank" rel="noopener"
+                                    data-i18n="edu5_school">UCAO – Unité Universitaire de Cotonou – Bénin</a>
+                            </h6>
+
+                            <h6 class="small-lemos mt-1"><span data-i18n="edu5_dates">(2011)</span></h6>
+
+                            <h5 class="ml-0 mb-2">
+                                <button class="btn btn-blue py-0" type="button" data-toggle="collapse"
+                                    data-target="#collapseContent-9" aria-expanded="true"
+                                    aria-controls="collapseContent-9">
+                                    <span data-i18n="read_more">Read more...</span>
+                                </button>
+                            </h5>
+                        </div>
+
+                        <div id="collapseContent-9" class="collapse">
+                            <div class="card-body mb-0 pt-4 pb-0 text-justify">
+                                <ul class="mt-3 mb-0 text-justify">
+                                    <li data-i18n="edu5_b1">Formation en systèmes d’information, bases de données et développement applicatif.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
 
         </div>
 
@@ -203,6 +489,201 @@
     <script src="../components/footer.js" type="text/javascript"></script>
     <script src="../components/footer-lemos.js" type="text/javascript"></script>
     <script src="../assets/js/fontawesome651all.min.js" type="text/javascript" defer></script>
+
+    <!-- ===================== i18n (FR/EN) ===================== -->
+    <script>
+        // Translation dictionary
+        const i18n = {
+            fr: {
+                // Sections + common
+                section_experience: "__ Experience Professionnelle _____",
+                section_education: "__ Formation _____",
+                read_more: "Lire plus...",
+
+                // PAC
+                pac_company: "PORT AUTONOME DE COTONOU",
+                pac_location: "Cotonou – Bénin",
+                pac_role: "Responsable ERP & Solutions Métiers",
+                pac_dates: "(Depuis Mars 2023)",
+                pac_b1: "Pilotage et gouvernance de l’ERP JD Edwards (Paie, Achats, Stocks) dans un environnement critique et fortement intégré.",
+                pac_b2: "Conception et mise en œuvre d’interfaces applicatives entre l’ERP, les banques et les partenaires institutionnels, garantissant la fiabilité et la continuité des échanges de données.",
+                pac_b3: "Chef de projet de la migration ERP JD Edwards (version 9.0 → 9.2) : cadrage, planification, coordination des acteurs, déploiement et accompagnement au changement.",
+                pac_b4: "Optimisation des processus logistiques et de facturation, avec une amélioration de la traçabilité, de la qualité des données et de l’efficacité opérationnelle.",
+                pac_b5: "Chef de projet de l’implémentation d’une solution GMAO-SIG : analyse des besoins, dimensionnement de la solution et pilotage du projet.",
+                pac_b6: "Coordination des équipes internes et partenaires IT, incluant la formation des utilisateurs clés et la production de documentation fonctionnelle et technique.",
+                pac_b7: "Mise en place de reporting décisionnel à l’aide de Power BI et SQL pour le suivi de la performance, des KPI et des SLA.",
+
+                // COLAS
+                colas_company: "COLAS DS",
+                colas_location: "Casablanca – Maroc",
+                colas_role: "Ingénieur Études et Développements ERP",
+                colas_dates: "(Novembre 2020 – Décembre 2023)",
+                colas_b1: "Développement et interfaçage de JD Edwards avec les outils métiers du groupe.",
+                colas_b2: "Participation au projet « Upgrade J@DE Release 23 + migration 64 bits ».",
+                colas_b3: "Support technique et rédaction de spécifications pour les besoins logistiques et financiers.",
+
+                // ITiDEV
+                itidev_company: "ITiDEV (EXPERIUM-NAX GROUP)",
+                itidev_location: "Abidjan / Lyon",
+                itidev_role: "Consultant Technico-Fonctionnel ERP",
+                itidev_dates: "(Mars 2016 – Octobre 2020)",
+                itidev_b1: "Conception de solutions sur mesure (logistique, finance, paie) pour des clients multisectoriels.",
+                itidev_b2: "Réalisation d’interfaces applicatives (infrastructure multisite, environnements ERP/JDE).",
+                itidev_b3: "Études d’impacts et rédaction de spécifications dans des contextes de transformation digitale.",
+
+                // SELEC
+                selec_company: "GROUPE SELEC SA",
+                selec_location: "Abidjan – Côte d’Ivoire",
+                selec_role: "Responsable Informatique & Logistique",
+                selec_dates: "(Septembre 2015 – Février 2016)",
+                selec_b1: "Gérer le parc informatique.",
+                selec_b2: "Manager des équipes et prestataires externes.",
+                selec_b3: "Assurer la gestion, la traçabilité et le contrôle du petit et gros matériel (inventaire, traitement et suivi des actions/écarts).",
+
+                // Education
+                edu1_title: "Master of Science in Enterprise IT Management",
+                edu1_school: "University of Essex (Online) – Royaume-Uni",
+                edu1_dates: "(2024 – En cours)",
+                edu1_b1: "Gouvernance et stratégie IT, gestion des risques et sécurité des systèmes.",
+                edu1_b2: "Optimisation des services IT (ITIL), pilotage de projets IT complexes.",
+                edu1_b3: "Analyse de données et reporting décisionnel (Power BI).",
+
+                edu2_title: "Professional Scrum Master PSM® I",
+                edu2_school: "SCRUM Organisation",
+                edu2_dates: "(2022)",
+                edu2_b1: "Certification Scrum démontrant la maîtrise des fondamentaux Agile/Scrum (rôles, événements et artefacts).",
+
+                edu3_title: "Executive Master of Engineering – Logistique & Management de la Supply Chain",
+                edu3_school: "ISM Paris – SupMeca, France",
+                edu3_dates: "(2021)",
+                edu3_b1: "Conception et pilotage de chaînes logistiques complexes.",
+                edu3_b2: "Optimisation des flux, des coûts et de la performance opérationnelle.",
+                edu3_b3: "Intégration des outils ERP et des méthodes de gestion industrielle.",
+
+                edu4_title: "Certificate of Proficiency in English",
+                edu4_school: "University of Legon, Ghana",
+                edu4_dates: "(2015)",
+                edu4_b1: "Programme attestant d’un niveau d’anglais académique et professionnel.",
+
+                edu5_title: "Licence en Informatique de Gestion",
+                edu5_school: "UCAO – Unité Universitaire de Cotonou – Bénin",
+                edu5_dates: "(2011)",
+                edu5_b1: "Formation en systèmes d’information, bases de données et développement applicatif."
+            },
+
+            en: {
+                // Sections + common
+                section_experience: "__ Professional Experience _____",
+                section_education: "__ Education _____",
+                read_more: "Read more...",
+
+                // PAC
+                pac_company: "PORT AUTONOME DE COTONOU",
+                pac_location: "Cotonou – Benin",
+                pac_role: "ERP & Business Solutions Manager",
+                pac_dates: "(Since March 2023)",
+                pac_b1: "ERP JD Edwards governance and operations (Payroll, Procurement, Inventory) in a critical, highly integrated environment.",
+                pac_b2: "Design and implementation of application interfaces between the ERP, banks and institutional partners, ensuring reliable and continuous data exchanges.",
+                pac_b3: "Project lead for the JD Edwards ERP migration (version 9.0 → 9.2): scoping, planning, stakeholder coordination, deployment and change management.",
+                pac_b4: "Optimisation of logistics and invoicing processes, improving traceability, data quality and operational efficiency.",
+                pac_b5: "Project lead for a CMMS–GIS implementation: requirements analysis, solution sizing and overall project management.",
+                pac_b6: "Coordination of internal teams and IT partners, including key-user training and the production of functional and technical documentation.",
+                pac_b7: "Implementation of management reporting using Power BI and SQL to monitor performance, KPIs and SLAs.",
+
+                // COLAS
+                colas_company: "COLAS DS",
+                colas_location: "Casablanca – Morocco",
+                colas_role: "ERP Systems Analyst & Developer",
+                colas_dates: "(November 2020 – December 2023)",
+                colas_b1: "Development and integration of JD Edwards with the group’s business applications.",
+                colas_b2: "Contributed to the “J@DE Release 23 upgrade + 64-bit migration” project.",
+                colas_b3: "Technical support and specification writing for logistics and finance requirements.",
+
+                // ITiDEV
+                itidev_company: "ITiDEV (EXPERIUM-NAX GROUP)",
+                itidev_location: "Abidjan / Lyon",
+                itidev_role: "ERP Techno-Functional Consultant",
+                itidev_dates: "(March 2016 – October 2020)",
+                itidev_b1: "Designed tailored solutions (logistics, finance, payroll) for multi-sector clients.",
+                itidev_b2: "Delivered application interfaces in multi-site infrastructures across ERP/JDE environments.",
+                itidev_b3: "Impact assessments and specification writing in digital transformation contexts.",
+
+                // SELEC
+                selec_company: "GROUPE SELEC SA",
+                selec_location: "Abidjan – Côte d’Ivoire",
+                selec_role: "IT & Logistics Manager",
+                selec_dates: "(September 2015 – February 2016)",
+                selec_b1: "Managed the IT asset base and day-to-day IT operations.",
+                selec_b2: "Led teams and coordinated external service providers.",
+                selec_b3: "Ensured tracking and control of small and heavy equipment (inventory, processing and follow-up of actions/gaps).",
+
+                // Education
+                edu1_title: "Master of Science in Enterprise IT Management",
+                edu1_school: "University of Essex (Online) – United Kingdom",
+                edu1_dates: "(2024 – Ongoing)",
+                edu1_b1: "IT governance and strategy, risk management and information systems security.",
+                edu1_b2: "IT service optimisation (ITIL) and delivery of complex IT projects.",
+                edu1_b3: "Data analysis and management reporting (Power BI).",
+
+                edu2_title: "Professional Scrum Master PSM® I",
+                edu2_school: "Scrum.org",
+                edu2_dates: "(2022)",
+                edu2_b1: "Scrum certification demonstrating mastery of Agile/Scrum fundamentals (roles, events and artefacts).",
+
+                edu3_title: "Executive Master of Engineering – Logistics & Supply Chain Management",
+                edu3_school: "ISM Paris – SupMeca, France",
+                edu3_dates: "(2021)",
+                edu3_b1: "Design and management of complex supply chains.",
+                edu3_b2: "Flow, cost and operational performance optimisation.",
+                edu3_b3: "Integration of ERP tools and industrial management methods.",
+
+                edu4_title: "Certificate of Proficiency in English",
+                edu4_school: "University of Legon, Ghana",
+                edu4_dates: "(2015)",
+                edu4_b1: "Programme confirming academic and professional English proficiency.",
+
+                edu5_title: "BSc in Management Information Systems",
+                edu5_school: "UCAO – University Unit of Cotonou – Benin",
+                edu5_dates: "(2011)",
+                edu5_b1: "Studies in information systems, databases and application development."
+            }
+        };
+
+        function setLanguage(lang) {
+            // Set html lang attribute
+            document.documentElement.lang = lang;
+
+            // Replace text nodes for all elements with data-i18n
+            document.querySelectorAll("[data-i18n]").forEach(el => {
+                const key = el.getAttribute("data-i18n");
+                const value = i18n?.[lang]?.[key];
+                if (value) el.textContent = value;
+            });
+
+            // Toggle active state on language buttons
+            const frBtn = document.getElementById("btn-fr");
+            const enBtn = document.getElementById("btn-en");
+            if (frBtn && enBtn) {
+                frBtn.classList.toggle("active", lang === "fr");
+                enBtn.classList.toggle("active", lang === "en");
+            }
+
+            // Save choice
+            localStorage.setItem("lang", lang);
+        }
+
+        document.addEventListener("DOMContentLoaded", () => {
+            // Load saved language (default: fr)
+            const savedLang = localStorage.getItem("lang") || "fr";
+            setLanguage(savedLang);
+
+            // Wire buttons
+            const frBtn = document.getElementById("btn-fr");
+            const enBtn = document.getElementById("btn-en");
+            if (frBtn) frBtn.addEventListener("click", () => setLanguage("fr"));
+            if (enBtn) enBtn.addEventListener("click", () => setLanguage("en"));
+        });
+    </script>
 
 </body>
 

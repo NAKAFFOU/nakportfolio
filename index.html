@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="fr">
 
 <head>
 
@@ -40,6 +40,13 @@
     <!-- Google Fonts CSS -->
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap"
         rel="stylesheet">
+
+    <!-- Optional tiny style for language buttons (doesn't break your template) -->
+    <style>
+        .lang-switch .btn.active {
+            font-weight: 700;
+        }
+    </style>
 </head>
 
 <body>
@@ -49,8 +56,17 @@
 
         <!-- <div class="container-fluid mt-4"> -->
         <div class="container mt-4">
+
+            <!-- ===================== LANGUAGE SWITCH (TOP BUTTONS) ===================== -->
+            <div class="d-flex justify-content-end mb-3">
+                <div class="btn-group btn-group-sm lang-switch" role="group" aria-label="Language switch">
+                    <button type="button" class="btn btn-outline-primary" id="btn-fr">FR</button>
+                    <button type="button" class="btn btn-outline-primary" id="btn-en">EN</button>
+                </div>
+            </div>
+
             <!-- <h5 class="mb-4"><b>__ Home _____________________</b></h5> -->
-			<div class="mb-4"> </div>
+            <div class="mb-4"> </div>
 
             <div class="row">
                 <div class="col-sm-4">
@@ -66,41 +82,26 @@
                             <h4 class="text-center mb-0"
                                 style="color: var(--blue-medium);font-family: 'Ubuntu Sans', sans-serif; font-size: 1.75rm; max-width: 100%">
                                 Nelson AKAFFOU </h4>
-                            <!-- <h6 class="text-center mb-2" style="font-size: 0.85rm"><small>rochana@cs.odu.edu</small></h6> -->
-                            <p class="text-center mb-4">Enterprise Ressource Planning (ERP) | IT Management | Supply Chain Management</p>
+
+                            <p class="text-center mb-4" data-i18n="headline">
+                                Enterprise Ressource Planning (ERP) | IT Management | Supply Chain Management
+                            </p>
 
                             <div class="">
                                 <p>
-                                    <!-- <ul class="social-icons text-center text-md-left"> -->
                                 <ul class="social-icons pl-5 pl-md-0">
-                                    <li class="pl-4 pl-md-5"><a href="" target="_blank"><i
-                                                class="mr-3 fa-fw fa-solid fa-location-dot" aria-hidden="true"></i>
-                                            Address</a></li>
-                                    <li class="pl-4 pl-md-5"><a href="" target="_blank"><i
-                                                class="mr-3 fa fa-fw fa-school" aria-hidden="true"></i> University</a>
+                                    <li class="pl-4 pl-md-5">
+                                        <a href="mailto:nelsonakaffou@yahoo.fr" target="_blank" rel="noopener">
+                                            <i class="mr-3 fa-fw fa-regular fa-envelope" aria-hidden="true"></i>
+                                            <span data-i18n="label_email">Email</span>
+                                        </a>
                                     </li>
-                                    <li class="pl-4 pl-md-5"><a href=""><i class="mr-3 fa-fw fa-solid fa-globe"
-                                                aria-hidden="true"></i> Website</a></li>
-                                    <li class="pl-4 pl-md-5"><a href="mailto:" target="_blank"><i
-                                                class="mr-3 fa-fw fa-regular fa-envelope" aria-hidden="true"></i>
-                                            Email</a></li>
-                                    <li class="pl-4 pl-md-5"><a href="" target="_blank"><i
-                                                class="mr-3 fa-fw fa-brands fa-google-scholar" aria-hidden="true"></i>
-                                            Google Scholar</a></li>
-                                    <li class="pl-4 pl-md-5"><a href="" target="_blank"><i
-                                                class="mr-3 fa-fw fa-brands fa-researchgate" aria-hidden="true"></i>
-                                            ResearchGate</a></li>
-                                    <li class="pl-4 pl-md-5"><a href="" target="_blank"><i
-                                                class="mr-3 fa-fw fa-brands fa-orcid" aria-hidden="true"></i> ORCID</a>
+                                    <li class="pl-4 pl-md-5">
+                                        <a href="www.linkedin.com/in/nelson-akaffou-96a10b12a" target="_blank" rel="noopener">
+                                            <i class="mr-3 fab fa-fw fa-linkedin" aria-hidden="true"></i>
+                                            LinkedIn
+                                        </a>
                                     </li>
-                                    <li class="pl-4 pl-md-5"><a href="" target="_blank"><i
-                                                class="mr-3 fab fa-fw fa-linkedin" aria-hidden="true"></i> LinkedIn</a>
-                                    </li>
-                                    <li class="pl-4 pl-md-5"><a href="" target="_blank"><i
-                                                class="mr-3 fab fa-fw fa-github" aria-hidden="true"></i> Github</a></li>
-                                    <li class="pl-4 pl-md-5"><a href="" target="_blank"><i
-                                                class="mr-3 fa-fw fa-brands fa-x-twitter" aria-hidden="true"></i>
-                                            Twitter</a></li>
                                 </ul>
                                 </p>
                             </div>
@@ -108,70 +109,46 @@
 
                     </div>
                 </div>
+
                 <div class="col-sm-8">
                     <div class="">
-                        <h4 class="font-weight-bold">About Me</h4>
-                        <p class="mb-4 text-justify">Seasoned IT Professional specialising in Oracle JD Edwards ERP ecosystems, 
-                            with a decade of experience spanning technical development, system administration, and strategic IT 
-                            leadership. Expertise in end-to-end ERP implementations, process optimisation, 
-                            and digital transformation initiatives that bridge technology with supply chain excellence. 
-                            Currently pursuing an MSc in Enterprise IT Management to further enhance strategic capabilities 
-                            in aligning IT infrastructure with organisational goals across diverse business environments.
+                        <h4 class="font-weight-bold" data-i18n="about_title">About Me</h4>
 
+                        <p class="mb-4 text-justify" data-i18n="about_text">
+                            Seasoned IT Professional specialising in Oracle JD Edwards ERP ecosystems,
+                            with a decade of experience spanning technical development, system administration, and strategic IT
+                            leadership. Expertise in end-to-end ERP implementations, process optimisation,
+                            and digital transformation initiatives that bridge technology with supply chain excellence.
+                            Currently pursuing an MSc in Enterprise IT Management to further enhance strategic capabilities
+                            in aligning IT infrastructure with organisational goals across diverse business environments.
                         </p>
 
-                        <h4 class="mt-4 font-weight-bold">Key Competencies</h4>
+                        <h4 class="mt-4 font-weight-bold" data-i18n="competencies_title">Key Competencies</h4>
                         <ul>
-                            <li>Project Management</li>
-                            <li>Process Improvement</li>
-                            <li>Enterprise Resource Planning</li>
-                            <li>Supply Chain Management</li>
-                            <li>Software Development</li>
-                            <li>Database Management</li>
+                            <li data-i18n="comp_1">Project Management</li>
+                            <li data-i18n="comp_2">Process Improvement</li>
+                            <li data-i18n="comp_3">Enterprise Resource Planning</li>
+                            <li data-i18n="comp_4">Supply Chain Management</li>
+                            <li data-i18n="comp_5">Software Development</li>
+                            <li data-i18n="comp_6">Database Management</li>
                         </ul>
 
-<!-- 
-                        <div class="text-center">
-                            <button type="button" class="mt-2 btn btn-blue btn-sm"><a href="" target="_blank">Research
-                                    Group Webpage<i class="ml-2 fa-solid fa-globe"></i></a></button>
+                        <h4 class="font-weight-bold" data-i18n="cv_title">CV & Resume</h4>
+                        <div class="mb-5">
+                            <button type="button" class="mt-2 mt-2 btn btn-blue btn-sm">
+                                <a href="assets/doc/Resume Nelson_AKAFFOU.pdf" target="_blank" rel="noopener">
+                                    <span data-i18n="btn_resume">Resume</span>
+                                    <i class="ml-2 fa-solid fa-circle-info"></i>
+                                </a>
+                            </button>
 
-                            <button type="button" class="ml-4 mt-2 btn btn-blue btn-sm"><a href=""
-                                    target="_blank">Research Group Twitter<i
-                                        class="ml-2 fa-brands fa-x-twitter"></i></a> </button>
-
-                            <button type="button" class="ml-4 mt-2 btn btn-blue btn-sm"><a href=""
-                                    target="_blank">Research Group GitHub <i class="ml-2 fa-brands fa-github"></i></a>
+                            <button type="button" class="ml-2 mt-2 btn btn-blue btn-sm">
+                                <a href="assets/doc/CV _NELSON_AKAFFOU.pdf" target="_blank" rel="noopener">
+                                    <span data-i18n="btn_cv">Curriculum Vitae</span>
+                                    <i class="ml-2 fa-regular fa-file"></i>
+                                </a>
                             </button>
                         </div>
-
-                        <p class="mt-4 text-justify"><span class="font-weight-bold">Research Interests:</span>
-                            Interest_1, Interest_2, Interest_3, Interest_4, Interest_5, Interest_6, Interest_7</p>
-
-                        <h4 class="mt-4 font-weight-bold">News</h4>
-
-                        <ul class="">
-                            <small>
-
-                                <li class="mb-2"><span class="ref-journal">Month Year: </span> Paper got accepted!
-                                    "Paper Title" - Conference Name, Year</li>
-                                <li class="mb-2"><span class="ref-journal">Month Year: </span> Award Received! Award
-                                    Title, Affiliation</li>
-                                <li class="mb-2"><span class="ref-journal">Month Year: </span> Joined __________
-                                    University as a Graduate Student</li>
-
-                            </small>
-                        </ul>
--->
-
-
-                        <h4 class="font-weight-bold">CV & Resume</h4>
-                        <div class="mb-5">
-                            <button type="button" class="mt-2 mt-2 btn btn-blue btn-sm"><a href="assets/doc/Resume Nelson_AKAFFOU.pdf"
-                                    target="_blank">Resume<i class="ml-2 fa-solid fa-circle-info"></i></a> </button>
-                            <button type="button" class="ml-2 mt-2 btn btn-blue btn-sm"><a href="assets/doc/CV _NELSON_AKAFFOU.pdf"
-                                    target="_blank">Curriculum Vitae<i class="ml-2 fa-regular fa-file"></i></a></button>
-                        </div>
-
 
                     </div>
                 </div>
@@ -179,15 +156,11 @@
 
         </div>
 
-        <!-- <footer-component></footer-component> -->
-
         <div id="footer">
             <footer-component></footer-component>
             <footer-component-lemos></footer-component-lemos>
         </div>
     </div>
-
-
 
     <!-- jQuery and Bootstrap Bundle (includes Popper) -->
     <script src="assets/vendor/jquery/jquery.slim.min.js"></script>
@@ -200,6 +173,74 @@
     <script src="components/footer-lemos.js" type="text/javascript"></script>
     <script src="assets/js/fontawesome651all.min.js" type="text/javascript" defer></script>
 
+    <!-- ===================== i18n (FR/EN) ===================== -->
+    <script>
+        const i18n = {
+            fr: {
+                headline: "Planification des ressources d’entreprise (ERP) | Management IT | Management de la Supply Chain",
+                label_email: "Email",
+                about_title: "À propos de moi",
+                about_text:
+                    "Professionnel IT expérimenté, spécialisé dans l’écosystème ERP Oracle JD Edwards, avec dix ans d’expérience couvrant le développement, l’administration des systèmes et le pilotage stratégique des SI. Expertise en implémentations ERP de bout en bout, optimisation des processus et initiatives de transformation digitale reliant technologie et excellence Supply Chain. Actuellement en MSc Enterprise IT Management afin de renforcer mes capacités stratégiques pour aligner l’infrastructure IT sur les objectifs de l’organisation dans des environnements métiers variés.",
+                competencies_title: "Compétences clés",
+                comp_1: "Gestion de projet",
+                comp_2: "Amélioration des processus",
+                comp_3: "ERP (Enterprise Resource Planning)",
+                comp_4: "Supply Chain Management",
+                comp_5: "Développement logiciel",
+                comp_6: "Gestion des bases de données",
+                cv_title: "CV & Résumé",
+                btn_resume: "Résumé (Resume)",
+                btn_cv: "Curriculum Vitae"
+            },
+            en: {
+                headline: "Enterprise Resource Planning (ERP) | IT Management | Supply Chain Management",
+                label_email: "Email",
+                about_title: "About Me",
+                about_text:
+                    "Seasoned IT professional specialising in Oracle JD Edwards ERP ecosystems, with a decade of experience spanning software development, systems administration, and strategic IT leadership. Proven expertise in end-to-end ERP implementations, process optimisation, and digital transformation initiatives that bridge technology with supply chain excellence. Currently pursuing an MSc in Enterprise IT Management to further strengthen strategic capabilities in aligning IT infrastructure with organisational goals across diverse business environments.",
+                competencies_title: "Key Competencies",
+                comp_1: "Project Management",
+                comp_2: "Process Improvement",
+                comp_3: "Enterprise Resource Planning",
+                comp_4: "Supply Chain Management",
+                comp_5: "Software Development",
+                comp_6: "Database Management",
+                cv_title: "CV & Resume",
+                btn_resume: "Resume",
+                btn_cv: "Curriculum Vitae"
+            }
+        };
+
+        function setLanguage(lang) {
+            document.documentElement.lang = lang;
+
+            document.querySelectorAll("[data-i18n]").forEach(el => {
+                const key = el.getAttribute("data-i18n");
+                const value = i18n?.[lang]?.[key];
+                if (value) el.textContent = value;
+            });
+
+            const frBtn = document.getElementById("btn-fr");
+            const enBtn = document.getElementById("btn-en");
+            if (frBtn && enBtn) {
+                frBtn.classList.toggle("active", lang === "fr");
+                enBtn.classList.toggle("active", lang === "en");
+            }
+
+            localStorage.setItem("lang", lang);
+        }
+
+        document.addEventListener("DOMContentLoaded", () => {
+            const savedLang = localStorage.getItem("lang") || "fr";
+            setLanguage(savedLang);
+
+            const frBtn = document.getElementById("btn-fr");
+            const enBtn = document.getElementById("btn-en");
+            if (frBtn) frBtn.addEventListener("click", () => setLanguage("fr"));
+            if (enBtn) enBtn.addEventListener("click", () => setLanguage("en"));
+        });
+    </script>
 
 </body>
 
